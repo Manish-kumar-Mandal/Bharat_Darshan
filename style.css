@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* navbar code  */
+
+.bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.0)), url(images/tajmahalbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    margin-top: -37px;
+
+}
+
+.logo {
+    width: 150px;
+    height: 97px;
+    border-radius: 50%;
+    margin-left: 73vw;
+    background-color: rgba(255, 255, 255, 0.84);
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    filter:
+        drop-shadow(0 0 8px #000) drop-shadow(0 0 10px #ff9933);
+}
+
+
+.sign-log {
+    display: flex;
+    background-color: white;
+    margin-left: 250px;
+}
+
+.sign-log button {
+    color: white;
+    background-color: #FF9933;
+    font-size: 22px;
+    font-family: "baloo bhai 2";
+    font-weight: 400;
+    border: none;
+    position: absolute;
+    outline: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.sign:hover {
+    transform: translatey(-5px);
+    background-color: rgba(135, 206, 250, 0.753);
+
+}
+
+.log:hover {
+    transform: translatey(-5px);
+    background-color: rgba(135, 206, 250, 0.753);
+
+}
+
+.sign {
+    padding: 0 12px;
+    /* position: absolute; */
+    right: 40px;
+}
+
+.log {
+    padding: 0 22px;
+    right: 160px;
+}
+
+
+
+nav ul li {
+    list-style: none;
+    color: white;
+    font-weight: 600;
+    font-family: "Baloo Bhai 2";
+
+}
+
+nav ul li:hover {
+    text-decoration: underline 3px solid #FF9933;
+
+}
+
+.active {
+    color: #FF9933;
+}
+
+nav ul {
+    display: flex;
+    gap: 70px;
+    padding: 25px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-left: 330px;
+
+
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+
+nav {
+    display: flex;
+    background: linear-gradient(to right, #75481b, #837f7f, rgb(0, 128, 0));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 20px black;
+
+}
+
+
+.incr {
+    color: #FF9933;
+    margin-top: 150px;
+    font-size: 40px;
+    font-family: "Great Vibes";
+
+
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 200px;
+    position: relative;
+
+}
+
+.heading h2 {
+    color: white;
+    font-size: 90px;
+
+    font-family: "poppins";
+    font-weight: 600;
+
+}
+
+.heading h3 {
+    color: white;
+    font-size: 90px;
+    margin-top: -36px;
+    font-family: "poppins";
+    font-weight: 600;
+}
+
+.heading p {
+    color: rgb(184, 181, 181);
+    font-size: 20px;
+}
+
+.india {
+    background: linear-gradient(to bottom, #FF9933 50%, #FFFFFF 50% 53%, #138808 66%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.first-btn {
+    position: absolute;
+    bottom: -80px;
+    font-size: 18px;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: #FF9933;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.first-btn:hover {
+    background-color: #138808;
+}
+
+
+/* state section  */
+
+.state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.state h3 {
+    font-family: "Great Vibes";
+    font-size: 30px;
+    color: #FF9933;
+    margin-top: 20px;
+}
+
+.state h2 {
+    font-size: 30px;
+    font-family: "poppins";
+    font-weight: 700;
+    padding-bottom: 15px;
+
+}
+
+.state span {
+    border-bottom: 4px solid #FF9933;
+    width: 190px;
+
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 33px;
+    margin-left: 150px;
+
+}
+
+.card {
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
+    height: 43vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    margin-top: 30px;
+    transition: 0.3s;
+    cursor: grab;
+
+
+}
+
+.card:hover {
+    transform: translatey(-10px);
+    /* box-shadow: 0px 0px  15px black; */
+
+}
+
+
+.card img {
+    width: 16vw;
+    height: 20vh;
+    border-radius: 16px;
+}
+
+
+.card h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "baloo bhai 2";
+}
+
+
+.card p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: serif;
+    color: gray;
+}
+
+
+.card button {
+    font-size: 18px;
+    padding: 13px 40px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background-color: #FF9933;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+
+
+}
+
+.card button:hover {
+    background-color: #138808;
+}
+
+/* footer section */
+
+.foot-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgba(4, 4, 53, 0.855);
+
+}
+
+.foot-container li {
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.foot-container ul {
+    margin-top: 20px;
+}
+
+.first-section img {
+    width: 400px;
+    height: 190px;
+    filter: drop-shadow(0 0 15px rgba(2, 2, 2, 0.657));
+}
+
+.first-section p {
+    margin-left: 70px;
+    font-size: 15px;
+    font-family: "poppins";
+    color: rgb(222, 213, 213);
+}
+
+.social-ico {
+    margin-left: 60px;
+    padding: 26px 0;
+
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+.fa-facebook:hover {
+    color: blue;
+}
+
+.fa-instagram:hover {
+    color: palevioletred;
+}
+
+.fa-twitter:hover {
+    color: cyan;
+}
+
+.social-ico a {
+    color: white;
+}
+
+.social-ico i {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 15px;
+    margin: 0 4px;
+}
+
+.second-section {
+    font-family: "baloo bhai 2";
+    margin-top: 30px;
+}
+
+.third-section {
+    font-family: "baloo bhai 2";
+    margin-top: 30px;
+}
+
+.fourth-section {
+    font-family: "baloo bhai 2";
+    margin-top: 30px;
+}
+
+.fifth-section {
+    font-family: "baloo bhai 2";
+    margin-top: 30px;
+    margin-right: 180px;
+}
+
+.fifth-section p {
+    font-size: 15px;
+    margin-top: 17px;
+}
+
+.fifth-section input {
+    padding: 12px;
+    background-color: transparent;
+    border: 2px solid rgb(160, 155, 155);
+    outline: none;
+    color: white;
+    margin-top: 12px;
+}
+
+.fifth-section input::placeholder {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.fifth-section button {
+    font-size: 17px;
+    padding: 7px;
+    color: white;
+    font-family: "poppins";
+    background-color: rgb(255, 81, 0);
+    border: none;
+    cursor: pointer;
+
+}
+
+.fifth-section button:hover {
+    background-color: #138808;
+}
+
+/* copyright section */
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: gray;
+
+}
+
+
+.copyright {
+    background-color: rgba(4, 4, 53, 0.855);
+    color: rgb(201, 198, 198);
+    text-align: center;
+    font-family: serif;
+    padding: 12px;
+    position: relative;
+
+
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.fot-pic {
+    position: absolute;
+    height: 29vh;
+    right: -22px;
+    z-index: 10;
+    bottom: -49px;
+    /* top: 200px; */
+}
+
+    .first-section img {
+        width: 250px;
+        height: auto;
+    }
+
+    .fifth-section {
+        margin-right: 0;
+    }
+
+    .fot-pic {
+        display: none;
+    }
+
+
+@media screen and (max-width: 500px) {
+    
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        padding: 14px 0;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+        right: 10px;
+        top: 10px;
+    }
+ 
+    nav ul {
+        display: flex;
+        align-items: center;
+
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 9px;
+        margin-left: 0;
+        font-size: 14px;
+        padding: 15px 5px;
+    }
+
+     .div{
+        /* width: 200px; */
+        margin-right: 100px;
+        text-align: center;
+    }
+
+
+    .sign-log {
+        margin-left: 0;
+        background: transparent;
+        position: relative;
+        top: 30px;
+        right: 90px;
+      
+
+    }
+
+    .log,
+    .sign {
+        margin: 5px;
+
+    }
+
+    .sign-log button {
+        position: static;
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .bg {
+        min-height: 100vh;
+    }
+
+    .heading {
+        margin: 130px 30px 0;
+        text-align: center;
+    }
+
+    .incr {
+        font-size: 28px;
+    }
+
+    .heading h2,
+    .heading h3 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .heading h3 {
+        margin-top: 0;
+    }
+
+
+    .first-btn {
+        position: static;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+
+
+    /* State Cards */
+    .grid-card {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+ 
+
+    .card img{
+        width: 100%;
+        height: 220px;
+    }
+    
+    .card {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+ 
+
+
+   
+    /* Footer */
+    .foot-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .first-section img {
+        width: 180px;
+    }
+
+    .first-section p {
+        margin-left: 0;
+    }
+
+    .social-ico {
+        margin-left: 0;
+    }
+
+    .second-section,
+    .third-section,
+    .fourth-section,
+    .fifth-section {
+        margin-top: 25px;
+        margin-right: 0;
+    }
+
+    .fifth-section input {
+        width: 100%;
+    }
+
+    .fifth-section button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .copyright h3 {
+        font-size: 14px;
+    }
+
+}
+

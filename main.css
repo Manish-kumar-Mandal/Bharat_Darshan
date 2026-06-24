@@ -1,0 +1,302 @@
+/* ciies section  */
+
+.cities {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.cities h3 {
+    font-size: 28px;
+    color: #138808;
+    font-family: "Great Vibes";
+
+}
+
+.cities h2 {
+    font-size: 30px;
+    font-family: "poppins";
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.cities span {
+    border-bottom: 4px solid #138808;
+    width: 190px;
+
+}
+
+.city-card {
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
+    height: 29vh;
+    border-radius: 16px;
+    margin-top: 30px;
+    transition: 0.3s;
+    cursor: grab;
+
+
+}
+
+.city-card:hover {
+    transform: translatey(-10px);
+}
+
+.city-card img {
+    width: 16vw;
+    height: 20vh;
+    border-radius: 16px;
+}
+
+.city-card h2 {
+    margin-left: 70px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "baloo bhai 2";
+
+}
+
+.city-card p {
+    font-size: 17px;
+    margin-left: 72px;
+    font-weight: 400;
+    font-family: serif;
+    color: gray;
+    margin-top: -5PX;
+}
+
+/* places section  */
+
+.place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.place h3 {
+    font-size: 28px;
+    color: #FF9933;
+    font-family: "Great Vibes";
+
+}
+
+.place h2 {
+    font-size: 30px;
+    font-family: "poppins";
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.place span {
+    border-bottom: 4px solid #ff9933;
+    width: 190px;
+
+}
+
+.place-card {
+    background-color: white;
+    box-shadow: 0px 0px 10px gray;
+    height: 29vh;
+    border-radius: 16px;
+    margin-top: 30px;
+    transition: 0.3s;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.place-card:hover {
+    transform: translatey(-10px);
+}
+
+.place-card img {
+    width: 16vw;
+    height: 20vh;
+    border-radius: 16px;
+}
+
+.place-card h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "baloo bhai 2";
+
+}
+
+.place-card p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: serif;
+    color: gray;
+    margin-top: -5PX;
+}
+
+.fa-location-dot {
+    color: #138808;
+    position: relative;
+    bottom: 35px;
+    left: 38px;
+    font-size: 24px;
+}
+
+/* items section  */
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: gray; */
+    box-shadow: 0 0px 15px gray;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 70px;
+    width: 87vw;
+
+
+}
+
+.item-write {
+    margin-right: 60px;
+    cursor: pointer;
+
+}
+
+
+.item-write h3 {
+    font-family: "baloo bhai 2";
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.item-write p {
+    font-family: "poppins";
+    font-size: 14px;
+    color: gray;
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+
+
+}
+
+#food {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.item i {
+    font-size: 40px;
+
+}
+
+.culture,
+.festival,
+.adventure {
+    color: #FF9933;
+
+}
+
+.heritage,
+.food {
+    color: #138808;
+}
+
+
+/* set scroll position  */
+
+
+#states {
+    scroll-margin-top: 200px;
+}
+
+#cities {
+    scroll-margin-top: 250px;
+
+}
+
+#places {
+    scroll-margin-top: 250px;
+
+}
+
+#food {
+    scroll-margin-top: 500px;
+
+}
+
+#login-form {
+    scroll-margin-top: -130px;
+
+}
+
+@media screen and (max-width: 500px) {
+    .place-card img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .place-card {
+        height: 300px;
+    }
+
+    .city-card {
+        height: 300px;
+    }
+
+    .city-card img {
+        width: 100%;
+        height: 220px;
+
+    }
+
+    .city-card h2,
+    .city-card p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .fa-location-dot {
+        left: 100px;
+        bottom: 50px;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    
+    /* Items Section */
+    #food {
+        margin-left: 0;
+    }
+
+    .items {
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .item {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .item-write {
+        text-align: center;
+        margin-right: 0;
+    }
+}
